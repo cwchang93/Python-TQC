@@ -1,11 +1,22 @@
-items = {}
+def creat_dict(key, value):
+    data = {}
 
-while True:
-    key = input("Key: ")
-    if key == "end":
-        break
-    value = input("Value: ")
-    items[key] = value
+    while key != 'end':
+        key = input("Key: ")
 
-query = input("Search key: ")
-print(query in items)
+        if key != 'end':
+            value = input("Value: ")
+            data[key] = value
+
+        if key == 'end':
+            return data
+
+
+my_dict = creat_dict('key', 'value')
+
+search_key = input("Search key: ")
+
+if search_key in my_dict:
+    print(True)
+else:
+    print(False)
