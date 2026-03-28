@@ -1,8 +1,11 @@
 items = {}
 
-for item in input().split():
-    key, value = item.split(":")
+while True:
+    key = input("Key: ")
+    if key == "end":
+        break
+    value = input("Value: ")
     items[key] = value
 
-query = input()
-print(items[query])
+query = input("Search key: ")
+print(query in items)

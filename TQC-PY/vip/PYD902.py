@@ -1,14 +1,10 @@
-from pathlib import Path
+with open("read.txt", "r", encoding="utf-8") as file:
+    content = file.read()
 
-path = Path("PYD902.txt")
-values = []
+numbers = content.split()
+total = 0
 
-while True:
-    try:
-        values.append(input().strip())
-    except EOFError:
-        break
+for num in numbers:
+    total += int(num)
 
-path.write_text("\n".join(values))
-numbers = [int(line) for line in path.read_text().splitlines() if line.strip()]
-print(sum(numbers))
+print(total)
