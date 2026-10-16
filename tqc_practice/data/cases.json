@@ -1,0 +1,438 @@
+{
+  "Q110": {
+    "title": "正 n 邊形面積計算",
+    "description": "分別輸入整數 n（n ≥ 3）與正數邊長 s。面積公式為 n × s² ÷ (4 × tan(π/n))。輸出 Area = 與面積，小數點後 4 位。可使用 math 模組。",
+    "cases": [
+      {
+        "name": "八邊形",
+        "stdin": "8\n6\n",
+        "stdout": "Area = 173.8234\n"
+      },
+      {
+        "name": "正方形",
+        "stdin": "4\n2\n",
+        "stdout": "Area = 4.0000\n"
+      },
+      {
+        "name": "三角形",
+        "stdin": "3\n2\n",
+        "stdout": "Area = 1.7321\n"
+      },
+      {
+        "name": "小數邊長",
+        "stdin": "4\n1.5\n",
+        "stdout": "Area = 2.2500\n"
+      }
+    ]
+  },
+  "Q204": {
+    "title": "算術運算",
+    "description": "分三行輸入整數 a、整數 b、運算子。運算子可能為 +、-、*、/、//、%。輸出運算結果；除法相關測資的 b 不為零。",
+    "cases": [
+      {
+        "name": "乘法",
+        "stdin": "30\n20\n*\n",
+        "stdout": "600\n"
+      },
+      {
+        "name": "加法",
+        "stdin": "-4\n9\n+\n",
+        "stdout": "5\n"
+      },
+      {
+        "name": "減法",
+        "stdin": "3\n8\n-\n",
+        "stdout": "-5\n"
+      },
+      {
+        "name": "除法",
+        "stdin": "7\n2\n/\n",
+        "stdout": "3.5\n"
+      },
+      {
+        "name": "整除",
+        "stdin": "-7\n2\n//\n",
+        "stdout": "-4\n"
+      },
+      {
+        "name": "餘數",
+        "stdin": "7\n3\n%\n",
+        "stdout": "1\n"
+      }
+    ]
+  },
+  "Q210": {
+    "title": "三角形判斷",
+    "description": "分三行輸入正整數邊長。任意兩邊之和都必須大於第三邊；成立時輸出周長，否則輸出 Invalid（注意大小寫）。",
+    "cases": [
+      {
+        "name": "無效三角形",
+        "stdin": "5\n6\n13\n",
+        "stdout": "Invalid\n"
+      },
+      {
+        "name": "等邊三角形",
+        "stdin": "1\n1\n1\n",
+        "stdout": "3\n"
+      },
+      {
+        "name": "相等邊界",
+        "stdin": "1\n2\n3\n",
+        "stdout": "Invalid\n"
+      },
+      {
+        "name": "最長邊在前",
+        "stdin": "8\n3\n4\n",
+        "stdout": "Invalid\n"
+      },
+      {
+        "name": "最長邊在中間",
+        "stdin": "3\n8\n4\n",
+        "stdout": "Invalid\n"
+      },
+      {
+        "name": "有效三角形",
+        "stdin": "3\n4\n5\n",
+        "stdout": "12\n"
+      }
+    ]
+  },
+  "Q306": {
+    "title": "迴圈階乘計算",
+    "description": "輸入正整數 n，輸出 n!。請練習用迴圈累乘。",
+    "cases": [
+      {
+        "name": "題庫範例",
+        "stdin": "15\n",
+        "stdout": "1307674368000\n"
+      },
+      {
+        "name": "最小正整數",
+        "stdin": "1\n",
+        "stdout": "1\n"
+      },
+      {
+        "name": "一般階乘",
+        "stdin": "5\n",
+        "stdout": "120\n"
+      },
+      {
+        "name": "較大數字",
+        "stdin": "20\n",
+        "stdout": "2432902008176640000\n"
+      }
+    ]
+  },
+  "Q308": {
+    "title": "各位數總和",
+    "description": "第一行輸入測試筆數 n，接著 n 行各輸入一個整數 x（0 ≤ x ≤ 1000000）。每筆輸出 Sum of all digits of x is y，其中 y 為各位數總和。",
+    "cases": [
+      {
+        "name": "單筆",
+        "stdin": "1\n98765\n",
+        "stdout": "Sum of all digits of 98765 is 35\n"
+      },
+      {
+        "name": "多筆含零",
+        "stdin": "3\n32412\n0\n769\n",
+        "stdout": "Sum of all digits of 32412 is 12\nSum of all digits of 0 is 0\nSum of all digits of 769 is 22\n"
+      },
+      {
+        "name": "上界與連續測試",
+        "stdin": "3\n1000000\n999999\n10\n",
+        "stdout": "Sum of all digits of 1000000 is 1\nSum of all digits of 999999 is 54\nSum of all digits of 10 is 1\n"
+      }
+    ]
+  },
+  "Q404": {
+    "title": "數字反轉",
+    "description": "輸入一個正整數，以字串方式反轉後輸出。本練習依 VIP 版本保留反轉後的前導零，例如 1200 → 0021。",
+    "cases": [
+      {
+        "name": "一般反轉",
+        "stdin": "1234567\n",
+        "stdout": "7654321\n"
+      },
+      {
+        "name": "單位數",
+        "stdin": "8\n",
+        "stdout": "8\n"
+      },
+      {
+        "name": "尾端含零",
+        "stdin": "1200\n",
+        "stdout": "0021\n"
+      },
+      {
+        "name": "回文",
+        "stdin": "12321\n",
+        "stdout": "12321\n"
+      }
+    ]
+  },
+  "Q410": {
+    "title": "繪製等腰三角形",
+    "description": "輸入正整數高度 h。第 i 列（從 1 起）先輸出 h-i 個半形空格，再輸出 2*i-1 個星號。注意左側空白不可省略。",
+    "cases": [
+      {
+        "name": "三列",
+        "stdin": "3\n",
+        "stdout": "  *\n ***\n*****\n"
+      },
+      {
+        "name": "一列",
+        "stdin": "1\n",
+        "stdout": "*\n"
+      },
+      {
+        "name": "五列",
+        "stdin": "5\n",
+        "stdout": "    *\n   ***\n  *****\n *******\n*********\n"
+      }
+    ]
+  },
+  "Q502": {
+    "title": "乘積",
+    "description": "定義 compute(x, y) 函式，回傳兩整數的乘積。主程式分兩行讀取整數，呼叫函式並印出結果。",
+    "cases": [
+      {
+        "name": "題庫範例",
+        "stdin": "56\n11\n",
+        "stdout": "616\n"
+      },
+      {
+        "name": "負數",
+        "stdin": "-7\n8\n",
+        "stdout": "-56\n"
+      },
+      {
+        "name": "零",
+        "stdin": "0\n100\n",
+        "stdout": "0\n"
+      },
+      {
+        "name": "兩個負數",
+        "stdin": "-3\n-9\n",
+        "stdout": "27\n"
+      }
+    ],
+    "function": 2
+  },
+  "Q510": {
+    "title": "費氏數列",
+    "description": "定義 compute(num) 函式，輸出前 num 個費氏數列數值。num ≥ 2，從 0、1 開始。每個數字後印一個半形空格。本練習嚴格模式的標準輸出最後沒有換行；一般模式容許最後換行及行尾空格差異。勿輸出變數追蹤或除錯訊息。",
+    "cases": [
+      {
+        "name": "十項",
+        "stdin": "10\n",
+        "stdout": "0 1 1 2 3 5 8 13 21 34 "
+      },
+      {
+        "name": "兩項",
+        "stdin": "2\n",
+        "stdout": "0 1 "
+      },
+      {
+        "name": "六項",
+        "stdin": "6\n",
+        "stdout": "0 1 1 2 3 5 "
+      },
+      {
+        "name": "二十項",
+        "stdin": "20\n",
+        "stdout": "0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 "
+      }
+    ],
+    "function": 1
+  },
+  "Q602": {
+    "title": "撲克牌總和",
+    "description": "每行輸入一張牌，共五張。A=1、J=11、Q=12、K=13，英文字母大小寫皆可；其他牌為 2～10。輸出五張牌的總和。",
+    "cases": [
+      {
+        "name": "題庫範例",
+        "stdin": "5\n10\nA\nK\n3\n",
+        "stdout": "32\n"
+      },
+      {
+        "name": "大小寫牌面",
+        "stdin": "a\nj\nQ\nk\n10\n",
+        "stdout": "47\n"
+      },
+      {
+        "name": "純數字",
+        "stdin": "2\n3\n4\n5\n6\n",
+        "stdout": "20\n"
+      }
+    ]
+  },
+  "Q702": {
+    "title": "數組合併排序",
+    "description": "先輸出 Create tuple1:，逐行讀入整數，遇到 -9999 結束第一組（不納入數組）。再輸出 Create tuple2: 並用相同方式讀第二組。合併成 tuple，輸出 Combined tuple before sorting: 後接一個空格及合併數組；再輸出 Combined list after sorting: 後接一個空格及由小到大排序的 list。保留重複值。",
+    "cases": [
+      {
+        "name": "兩組整數",
+        "stdin": "1\n5\n3\n-9999\n2\n4\n6\n-9999\n",
+        "stdout": "Create tuple1:\nCreate tuple2:\nCombined tuple before sorting: (1, 5, 3, 2, 4, 6)\nCombined list after sorting: [1, 2, 3, 4, 5, 6]\n"
+      },
+      {
+        "name": "負數與重複",
+        "stdin": "-2\n3\n-9999\n3\n0\n-9999\n",
+        "stdout": "Create tuple1:\nCreate tuple2:\nCombined tuple before sorting: (-2, 3, 3, 0)\nCombined list after sorting: [-2, 0, 3, 3]\n"
+      },
+      {
+        "name": "第一組空白",
+        "stdin": "-9999\n7\n-9999\n",
+        "stdout": "Create tuple1:\nCreate tuple2:\nCombined tuple before sorting: (7,)\nCombined list after sorting: [7]\n"
+      }
+    ]
+  },
+  "Q710": {
+    "title": "詞典搜尋",
+    "description": "反覆使用 input(\"Key: \") 讀入 key；key 為 end 時停止，否則以 input(\"Value: \") 讀入 value 存入字典。結束後用 input(\"Search key: \") 讀入欲查詢的 key。存在輸出 True，不存在輸出 False。輸入文字不會被評分器回顯，所以提示文字會接在一起，這是正常的 stdout。",
+    "cases": [
+      {
+        "name": "找到鍵",
+        "stdin": "a\n1\nb\n2\nend\nb\n",
+        "stdout": "Key: Value: Key: Value: Key: Search key: True\n"
+      },
+      {
+        "name": "查無鍵",
+        "stdin": "a\n1\nend\nz\n",
+        "stdout": "Key: Value: Key: Search key: False\n"
+      },
+      {
+        "name": "空字典",
+        "stdin": "end\nx\n",
+        "stdout": "Key: Search key: False\n"
+      },
+      {
+        "name": "值不是鍵",
+        "stdin": "a\nhello\nend\nhello\n",
+        "stdout": "Key: Value: Key: Search key: False\n"
+      }
+    ]
+  },
+  "Q802": {
+    "title": "字元對應",
+    "description": "輸入一行字串（測資使用 ASCII 字元）。逐字輸出 ASCII code for '字元' is 整數代碼，最後另起一行輸出所有代碼總和。空格也是字元。使用 ord() 取得代碼。",
+    "cases": [
+      {
+        "name": "英文字母",
+        "stdin": "Az\n",
+        "stdout": "ASCII code for 'A' is 65\nASCII code for 'z' is 122\n187\n"
+      },
+      {
+        "name": "數字標點",
+        "stdin": "0!\n",
+        "stdout": "ASCII code for '0' is 48\nASCII code for '!' is 33\n81\n"
+      },
+      {
+        "name": "含空格",
+        "stdin": "A B\n",
+        "stdout": "ASCII code for 'A' is 65\nASCII code for ' ' is 32\nASCII code for 'B' is 66\n163\n"
+      }
+    ]
+  },
+  "Q810": {
+    "title": "最大值與最小值之差",
+    "description": "第一行輸入測試筆數 k。接著 k 行，每行有多個以空白分隔的數字，可能包含負數與小數。每筆輸出最大值減最小值，固定小數點後 2 位。",
+    "cases": [
+      {
+        "name": "多筆小數",
+        "stdin": "2\n1 5 3\n-2.5 4.25 0\n",
+        "stdout": "4.00\n6.75\n"
+      },
+      {
+        "name": "全部負數",
+        "stdin": "1\n-10 -3 -7\n",
+        "stdout": "7.00\n"
+      },
+      {
+        "name": "相同數字及多空白",
+        "stdin": "2\n5 5 5\n1.2   2.4  3.6\n",
+        "stdout": "0.00\n2.40\n"
+      }
+    ]
+  },
+  "Q902": {
+    "title": "資料加總",
+    "description": "不從鍵盤輸入資料。讀取目前工作目錄的 read.txt，將以空白、換行或 tab 分隔的整數全部加總後輸出。評分器每次自動提供新的 read.txt。",
+    "cases": [
+      {
+        "name": "逐行數字",
+        "stdin": "",
+        "stdout": "60\n",
+        "files": {
+          "read.txt": "10\n20\n30\n"
+        }
+      },
+      {
+        "name": "混合空白與負數",
+        "stdin": "",
+        "stdout": "12\n",
+        "files": {
+          "read.txt": "10 -5\n0\t7\n"
+        }
+      },
+      {
+        "name": "零總和",
+        "stdin": "",
+        "stdout": "0\n",
+        "files": {
+          "read.txt": "-9 9 0"
+        }
+      }
+    ]
+  },
+  "Q906": {
+    "title": "字串資料取代",
+    "description": "分三行輸入檔名、舊字串 s1、新字串 s2。讀取 UTF-8 檔案，先 print(\"=== Before the replacement\") 再 print(原內容)；將全部 s1 取代成 s2，print(\"=== After the replacement\") 再 print(新內容)，最後將新內容寫回同一檔案。原內容若含結尾換行，print 會再增加換行。評分會檢查輸出及實際檔案內容。",
+    "cases": [
+      {
+        "name": "基本取代",
+        "stdin": "read.txt\nworld\nPython\n",
+        "stdout": "=== Before the replacement\nhello world\n=== After the replacement\nhello Python\n",
+        "files": {
+          "read.txt": "hello world"
+        },
+        "expected_files": {
+          "read.txt": "hello Python"
+        }
+      },
+      {
+        "name": "多次出現與結尾換行",
+        "stdin": "story.txt\ncat\ndog\n",
+        "stdout": "=== Before the replacement\ncat cat\na cat\n\n=== After the replacement\ndog dog\na dog\n\n",
+        "files": {
+          "story.txt": "cat cat\na cat\n"
+        },
+        "expected_files": {
+          "story.txt": "dog dog\na dog\n"
+        }
+      },
+      {
+        "name": "沒有符合字串",
+        "stdin": "data.txt\nzzz\nx\n",
+        "stdout": "=== Before the replacement\nhello\n=== After the replacement\nhello\n",
+        "files": {
+          "data.txt": "hello"
+        },
+        "expected_files": {
+          "data.txt": "hello"
+        }
+      },
+      {
+        "name": "中文字串",
+        "stdin": "text.txt\n貓\n狗\n",
+        "stdout": "=== Before the replacement\n小貓和貓\n=== After the replacement\n小狗和狗\n",
+        "files": {
+          "text.txt": "小貓和貓"
+        },
+        "expected_files": {
+          "text.txt": "小狗和狗"
+        }
+      }
+    ]
+  }
+}
